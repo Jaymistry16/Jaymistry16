@@ -24,7 +24,7 @@ export const Navbar: FunctionComponent<NavbarProps> = () => {
           }}
         >
           <img src={logo} alt="Logo" className="w-14 h-14 rounded-full" />
-          <p>Jay Mistry</p>
+          <p>Maddy Macwan</p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10 ">
           {navLinks.map((link, index) => (

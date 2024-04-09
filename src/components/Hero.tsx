@@ -17,7 +17,7 @@ export const Hero: FunctionComponent<HeroProps> = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#975eff]">Jay Mistry</span>
+            Hi, I'm <span className="text-[#975eff]">Maddy Macwan</span>
           </h1>
           <p className={` ${styles.heroSubText} mt-2 text-white-100`}>
             A Software Developer specializing in React-Native,{" "}

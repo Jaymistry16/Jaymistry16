@@ -16,13 +16,13 @@ const Ball = (props: { img: any; index: number }) => {
   return (
     <Float speed={2} rotationIntensity={props.index / 2} floatIntensity={5}>
       <ambientLight intensity={3} />
-      <directionalLight position={[0, 0, 0, 0]} />
+      <directionalLight position={[0, 0, 0, 0] as any} />
       <mesh castShadow receiveShadow scale={2}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color="#ffffff"
-          polygonoffset
-          polygonoffsetFector={-5}
+          polygonOffset
+          polygonOffsetFactor={-5}
           flatShading
         />
         <Decal

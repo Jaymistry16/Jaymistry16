@@ -1,16 +1,10 @@
-import {
-  OrbitControls,
-  PointMaterial,
-  Points,
-  Preload,
-} from "@react-three/drei";
+import { OrbitControls, Preload } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 // import * as random from "maath/random/dist/maath-random.esm";
-import { Suspense, useRef } from "react";
-import { Loader } from "..";
+import { Suspense } from "react";
 
-const Star = (props: any) => {
-  const ref = useRef();
+const Star = () => {
+  // const ref = useRef();
   // const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
   // console.log(sphere);
 

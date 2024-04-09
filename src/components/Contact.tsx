@@ -1,4 +1,4 @@
-import { FunctionComponent, useRef, useState } from "react";
+import { FunctionComponent, useState } from "react";
 import { motion } from "framer-motion";
 import { Wrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
@@ -8,7 +8,7 @@ import { Earth } from ".";
 interface ContactProps {}
 
 const Contact: FunctionComponent<ContactProps> = () => {
-  const fromRef = useRef();
+  // const fromRef = useRef();
 
   const [form, setform] = useState({
     name: "",
@@ -16,7 +16,7 @@ const Contact: FunctionComponent<ContactProps> = () => {
     message: "",
   });
 
-  const [loading, setloding] = useState(false);
+  // const [loading, setloding] = useState(false);
 
   const handleChange = (e: any) => {
     const { target } = e;
@@ -78,7 +78,8 @@ const Contact: FunctionComponent<ContactProps> = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
           >
-            {loading ? "Sending..." : "Send"}
+            {/* {loading ? "Sending..." : "Send"} */}
+            Send
           </button>
         </form>
       </motion.div>
